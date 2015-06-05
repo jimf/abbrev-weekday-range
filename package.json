@@ -8,7 +8,7 @@
     "coveralls": "npm run coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "lint": "jshint .",
     "test": "tape test/*.js",
-    "validate": "npm run lint && npm test"
+    "validate": "npm run lint && npm test && npm run coveralls"
   },
   "repository": {
     "type": "git",
